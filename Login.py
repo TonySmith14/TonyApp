@@ -4,16 +4,17 @@
 
 U_Name = "Tony Smith"
 UserName = "Tony"
+UserEmail = "tony@smith.com"
 PassWord = "T0NY"
 
 
 # ----------------------------<<< Check User And Pass >>>----------------------------
 
-print ("Enter Your User Name")
+print ("Enter Your User Name or Email Address")
 
 UserInput = input()
 
-if UserInput == UserName :
+if UserInput == UserName or UserEmail :
     print ("Enter Your Password")
     PassInput = input()
     if PassInput == PassWord :
@@ -22,4 +23,5 @@ if UserInput == UserName :
     else :
         print ("Your Password is not Correct")        
 else :
-    print ("Your User Name is not Correct")
+    print ("Your User Name or Email Address is not Correct")
+
